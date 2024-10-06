@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="img/png" href="../static/img/chart.png">
+    <title>System Monitoring</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="index.html">Realtime System Monitoring</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+        </ul>
+    </div>
+
+    <div class="chart-container">
+        <h2>Monitor CPU, Memory, Swap, and Network usage in real-time</h2>
+    
+        <div class="cpu-charts">
+            <div class="chart-item">
+                <h3>CPU Usage (%)</h3>
+                <canvas id="cpuChart" width="600" height="300"></canvas>
+            </div>
+            <div class="chart-item">
+                <h3>CPU Frequency (MHz)</h3>
+                <canvas id="cpuFreqChart" width="600" height="300"></canvas>
+            </div>
+        </div>
+    
+        <div class="memory-network-charts">
+            <div class="chart-item">
+                <h3>Memory Usage (%)</h3>
+                <canvas id="memoryChart" width="600" height="300"></canvas>
+            </div>
+            <div class="chart-item">
+                <h3>Network Usage (Bytes Sent/Received)</h3>
+                <canvas id="networkChart" width="600" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

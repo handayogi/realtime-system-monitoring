@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="img/png" href="../static/img/chart.png">
+    <title>About Real-Time System Monitoring</title>
+
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="{{url_for('index')}}">Realtime System Monitoring</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>About Real-Time System Monitoring</h1>
+        </header>
+
+        <section class="about-section">
+            <h2>Overview</h2>
+            <p>
+                Real-Time System Monitoring merupakan platform inovatif yang dirancang untuk 
+                memberikan wawasan kepada pengguna tentang kinerja dan pemanfaatan sumber daya 
+                sistem mereka. Dengan terus memantau penggunaan CPU, virtual memory, jaringan, dsb.
+            </p>
+
+            <h2>Key Features</h2>
+            <ol>
+                <li>Real-time monitoring penggunaan CPU, memory, dan jaringan</li>
+                <li>Visualisasi tentang konsumsi sumber daya penggunaan sistem melalui grafik interaktif</li>
+                <li>Peringatan untuk aktivitas yang tidak biasa dan peningkatan sumber daya sistem secara tiba-tiba</li>
+                <li>Tampilan antarmuka yang ramah pengguna dan navigasi yang mudah</li>
+                <li>Dashboard yang dapat disesuaikan untuk preferensi pemantauan yang dipersonalisasi</li>
+            </ol>
+
+            <h2>Technologies Used</h2>
+            <p>
+                Platform ini dibangun menggunakan teknologi web modern, termasuk:
+            </p>
+            <ol>
+                <li><strong>Flask:</strong> Kerangka kerja web ringan untuk membangun aplikasi web dalam Python</li>
+                <li><strong>Chart.js:</strong> Library JavaScript yang canggih untuk membuat visualisasi grafik interaktif</li>
+                <li><strong>HTML5 & CSS3:</strong> Bahasa HTML5 dan CSS3 untuk membuat tampilan antarmuka</li>
+                <li><strong>JavaScript:</strong> Untuk konten dinamis dan update real-time konsumsi sumber daya sistem</li>
+            </ol>
+
+            <h2>Explanation</h2>
+            <p>
+                Modul psutil (Python System and Process Utilities) yang digunakan dalam platform ini dijelaskan sebagai berikut:
+            </p>
+            <ol>
+                <li>Modul <strong>psutil.cpu_percent()</strong>: Mendapatkan persentase penggunaan CPU oleh sistem dalam interval 1 detik.</li>
+                <li>Modul <strong>psutil.cpu_freq()</strong>: Mendapatkan informasi tentang frekuensi CPU terkini.</strong></li>
+                <li>Modul <strong>psutil.virtual_memory()</strong>: Memberikan informasi terkait penggunaan virtual memory pada sistem.</li>
+                <li>Modul <strong>psutil.net_io_counters()</strong>: Memberikan informasi tentang penggunaan jaringan termasuk bytes sent dan bytes received.</li>
+            </ol>
+        </section>
+    </div>
+    
+</body>
+</html>
