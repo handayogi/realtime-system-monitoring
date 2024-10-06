@@ -1,4 +1,4 @@
-# Simple Real-Time Database
+# Realtime System Monitoring
 
 **Simple real-time system monitoring** merupakan aplikasi yang berfokus pada pengiriman data **CPU Usage**, **CPU Frequency**, **Virtual Memory Usage**, dan **Network (*bytes_sent* dan *bytes_received*)** dari komputer ke **Firebase**,
 kemudian menampilkan data-data tersebut secara real-time di website menggunakan **Flask** yang di-deploy ke **Vercel**. Anda dapat memodifikasinya untuk mengirim dan menampilkan data lainnya secara real-time.
