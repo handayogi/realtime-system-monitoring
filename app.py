@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Inisialisasi Firebase Admin SDK
-cred = credentials.Certificate("path/to/your/private-key.json")
+cred = credentials.Certificate("path/to/your-serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://your-project-id.firebaseio.com/'
 })
