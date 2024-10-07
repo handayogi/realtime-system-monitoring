@@ -4,9 +4,9 @@ import psutil
 import time
 
 # Inisialisasi Firebase Admin SDK
-cred = credentials.Certificate("serviceAccount_privateKey.json")
+cred = credentials.Certificate("path/to/your-serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://pervasive-simple-web-default-rtdb.asia-southeast1.firebasedatabase.app/'
+    'databaseURL': 'https://your-project-id.firebaseio.com/'
 })
 
 # Referensi send data ke Firebase
